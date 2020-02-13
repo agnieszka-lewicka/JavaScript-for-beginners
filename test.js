@@ -1,20 +1,18 @@
-var myAge = 35;
+var age = 5;
 
-if (myAge >= 18 && myAge <= 30){
+while (age < 10) {
 
-    document.write ("You can come in my friend");
-
-} else {
-    document.write ("You ain't coming, sorry!");
+    console.log ("You are less than 10 years old");
+    age++;
 }
 
-var yourAge = 26;
+document.write ("You are now over 10 years old ");
 
-if (yourAge < 18 || yourAge > 30 || yourAge === 25){
+var links = document.getElementsByTagName("a");
 
-    document.write ("you cannot come in, sorry!");
+for (i = 1; i < links.length; i++) {
 
-} else {
-
-    document.write ("you are welcome, please come in");
+    console.log ("this is link numer" + i);
 }
+
+document.write ("all links now looped");
