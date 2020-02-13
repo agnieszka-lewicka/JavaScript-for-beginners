@@ -1,18 +1,16 @@
-var age = 5;
+for (i = 0; i < 10; i++) {
 
-while (age < 10) {
+    if (i === 3 || i === 5) {
 
-    console.log ("You are less than 10 years old");
-    age++;
+        continue;
+    }
+
+    console.log (i);
+
+    if (i === 7){
+
+        break;
+    }
 }
 
-document.write ("You are now over 10 years old ");
-
-var links = document.getElementsByTagName("a");
-
-for (i = 1; i < links.length; i++) {
-
-    console.log ("this is link numer" + i);
-}
-
-document.write ("all links now looped");
+console.log ("i have broken out of the loop!");
