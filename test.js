@@ -1,16 +1,10 @@
-for (i = 0; i < 10; i++) {
+function getAverage (a,b) {
 
-    if (i === 3 || i === 5) {
+    var average = (a + b) / 2;
+    console.log (average);
+    return average;
 
-        continue;
-    }
+} 
 
-    console.log (i);
-
-    if (i === 7){
-
-        break;
-    }
-}
-
-console.log ("i have broken out of the loop!");
+var myResult = getAverage (7,8);
+console.log ("the average is " + myResult);
