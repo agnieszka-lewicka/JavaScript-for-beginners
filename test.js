@@ -1,10 +1,24 @@
-function getAverage (a,b) {
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Aga";
 
-    var average = (a + b) / 2;
-    console.log (average);
-    return average;
+myCar.drive = function() {
 
-} 
+        console.log ("now driving");
 
-var myResult = getAverage (7,8);
-console.log ("the average is " + myResult);
+};
+
+myCar.drive();
+
+var myCar2 = {
+
+            maxSpeed: 70,
+            driver: "Aga Singer",
+            drive: function(speed, time) {
+
+                    console.log(speed * time);
+            }
+
+};
+
+myCar2.drive(30, 3);
