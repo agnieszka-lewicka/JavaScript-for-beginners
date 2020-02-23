@@ -1,6 +1,16 @@
-var myDate = new Date();
-console.log(myDate);
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
 
+button.onclick = function(){
 
-var myPastDate = new Date(1986, 10, 30);
-console.log(myPastDate);
+    if(content.className == "open"){
+        // shrink the box
+        content.className = "";
+        button.innerHTML = "Show More";
+    } else {
+        // expand the box
+        content.className = "open";
+        button.innerHTML = "Show Less";
+    }
+
+};
